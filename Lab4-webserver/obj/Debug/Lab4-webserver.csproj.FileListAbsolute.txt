@@ -1,0 +1,12 @@
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.config
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.pdb
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4-webserver.csproj.AssemblyReference.cache
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4_webserver.Bai1.resources
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4_webserver.Lab4.resources
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4_webserver.Properties.Resources.resources
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4-webserver.csproj.GenerateResource.cache
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4-webserver.csproj.CoreCompileInputs.cache
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4-webserver.exe
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4-webserver.pdb
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4_webserver.Bai2.resources
