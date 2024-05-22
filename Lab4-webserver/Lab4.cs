@@ -28,5 +28,11 @@ namespace Lab4_webserver
             Bai2 bai2=new Bai2();
             bai2.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bai4 bai4=new Bai4();  
+            bai4.ShowDialog();
+        }
     }
 }
