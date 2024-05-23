@@ -31,5 +31,10 @@ namespace Lab4_webserver
                 }
             }
         }
+
+        private void ShowWeb_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,6 +51,7 @@
             this.Controls.Add(this.webView21);
             this.Name = "ShowWeb";
             this.Text = "ShowWeb";
+            this.Load += new System.EventHandler(this.ShowWeb_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.ResumeLayout(false);
 

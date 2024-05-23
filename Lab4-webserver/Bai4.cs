@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Text.Json;
+using System.Windows.Forms;
 
 namespace Lab4_webserver
 {
@@ -17,6 +12,7 @@ namespace Lab4_webserver
         public Bai4()
         {
             InitializeComponent();
+            _dsphim = new Dictionary<string, int>(); // Initialize the dictionary here
         }
 
         public class Phim
@@ -24,10 +20,12 @@ namespace Lab4_webserver
             public string TenPhim { get; set; }
             public string LinkPhim { get; set; }
             public string LinkImage { get; set; }
+            public int Giave { get; set; }
         }
 
-        List<Phim> _PhimList;
-        int ygroupbox = 3;
+        private List<Phim> _PhimList;
+        private int ygroupbox = 3;
+        public Dictionary<string, int> _dsphim { get; set; }
 
         private void Bai4_Load(object sender, EventArgs e)
         {
@@ -42,7 +40,7 @@ namespace Lab4_webserver
                         Size = new Size(802, 181),
                         Text = ""
                     };
-                    groupBox.Click += GroupBox_Click; // Gắn trình xử lý sự kiện
+                    groupBox.Click += GroupBox_Click; // Attach event handler
                     panel1.Controls.Add(groupBox);
                     ygroupbox += 187;
 
@@ -75,6 +73,9 @@ namespace Lab4_webserver
                         Text = phim.LinkPhim
                     };
                     groupBox.Controls.Add(labelLink);
+
+                    // Populate the dictionary with movie name and price
+                    _dsphim[phim.TenPhim] = phim.Giave;
                 }
             }
         }
@@ -107,7 +108,7 @@ namespace Lab4_webserver
                 }
             }
 
-            if (!string.IsNullOrEmpty(movieLink)) // Kiểm tra nếu tìm thấy liên kết hợp lệ
+            if (!string.IsNullOrEmpty(movieLink)) // Check if a valid link is found
             {
                 ShowWeb showWeb = new ShowWeb
                 {
@@ -117,8 +118,17 @@ namespace Lab4_webserver
             }
             else
             {
-                MessageBox.Show("Không tìm thấy liên kết hợp lệ trong groupbox."); // Thông báo cho người dùng
+                MessageBox.Show("Không tìm thấy liên kết hợp lệ trong groupbox."); // Notify the user
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Datve datve = new Datve
+            {
+                dsphim = _dsphim // Pass the dictionary to the Datve form
+            };
+            datve.Show();
         }
     }
 }

@@ -45,3 +45,4 @@ D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\
 D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
 D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4_webserver.ShowWeb.resources
+D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\obj\Debug\Lab4_webserver.Datve.resources
