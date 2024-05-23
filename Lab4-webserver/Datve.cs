@@ -22,7 +22,8 @@ namespace Lab4_webserver
             if (comboBox1.SelectedItem != null && dsphim.ContainsKey(comboBox1.Text))
             {
                 MessageBox.Show(string.Format("Khách hàng: {2}\nPhim: {0}\nPhòng: {4}\nVị trí ngồi: {3}\nGiá: {1}",
-                                              comboBox1.Text, dsphim[comboBox1.Text], txbhoten.Text, vitringoi, cbphong.Text));
+                                              
+               comboBox1.Text, dsphim[comboBox1.Text], txbhoten.Text, vitringoi, cbphong.Text));
             }
             else
             {

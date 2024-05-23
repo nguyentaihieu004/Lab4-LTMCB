@@ -1,6 +1,12 @@
-2024/05/23-11:13:49.610 5c08 Reusing MANIFEST D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/05/23-11:13:49.611 5c08 Recovering log #22
-2024/05/23-11:13:49.611 5c08 Reusing old log D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/000022.log 
-2024/05/23-11:13:49.611 5c08 Delete type=2 #20
-2024/05/23-11:13:49.611 5c08 Delete type=2 #23
-2024/05/23-11:13:49.780 4ebc Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/05/23-15:28:49.040 4be8 Reusing MANIFEST D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/05/23-15:28:49.040 4be8 Recovering log #50
+2024/05/23-15:28:49.041 4be8 Reusing old log D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/000050.log 
+2024/05/23-15:28:49.090 38f4 Level-0 table #55: started
+2024/05/23-15:28:49.091 38f4 Level-0 table #55: 9450 bytes OK
+2024/05/23-15:28:49.092 38f4 Delete type=0 #50
+2024/05/23-15:28:49.092 c70 Manual compaction at level-0 from '\x00\x15\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x16\x00\x00\x00' @ 0 : 0; will stop at '\x00\x15\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00 \x17\x07I\xfaxB\x00\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 2586 : 1
+2024/05/23-15:28:49.092 c70 Compacting 1@0 + 1@1 files
+2024/05/23-15:28:49.093 c70 Generated table #56@0: 162 keys, 2418 bytes
+2024/05/23-15:28:49.093 c70 Compacted 1@0 + 1@1 files => 2418 bytes
+2024/05/23-15:28:49.094 c70 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/05/23-15:28:49.094 c70 Manual compaction at level-0 from '\x00\x15\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00 \x17\x07I\xfaxB\x00\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 2586 : 1 .. '\x00\x16\x00\x00\x00' @ 0 : 0; will stop at (end)

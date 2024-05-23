@@ -1,14 +1,4 @@
-2024/05/23-11:09:37.417 2a04 Reusing MANIFEST D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2024/05/23-11:09:37.417 2a04 Recovering log #18
-2024/05/23-11:09:37.417 2a04 Reusing old log D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/000018.log 
-2024/05/23-11:09:37.418 2a04 Delete type=2 #16
-2024/05/23-11:09:37.418 2a04 Delete type=2 #19
-2024/05/23-11:09:37.469 6284 Level-0 table #23: started
-2024/05/23-11:09:37.470 6284 Level-0 table #23: 8814 bytes OK
-2024/05/23-11:09:37.471 6284 Delete type=0 #18
-2024/05/23-11:09:37.472 2a04 Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\xc0\x81=:\xfaxB\x00\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 1081 : 1
-2024/05/23-11:09:37.472 2a04 Compacting 1@0 + 1@1 files
-2024/05/23-11:09:37.473 2a04 Generated table #24@0: 123 keys, 1881 bytes
-2024/05/23-11:09:37.473 2a04 Compacted 1@0 + 1@1 files => 1881 bytes
-2024/05/23-11:09:37.473 2a04 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/05/23-11:09:37.474 c64 Manual compaction at level-0 from '\x00\x09\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\x00\xc0\x81=:\xfaxB\x00\x03\x00\x00\x00\x00\x00\x00\xf0?' @ 1081 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/05/23-15:28:10.389 25f0 Reusing MANIFEST D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/05/23-15:28:10.389 25f0 Recovering log #50
+2024/05/23-15:28:10.390 25f0 Reusing old log D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\bin\Debug\Lab4-webserver.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/000050.log 
+2024/05/23-15:28:10.390 25f0 Delete type=2 #48

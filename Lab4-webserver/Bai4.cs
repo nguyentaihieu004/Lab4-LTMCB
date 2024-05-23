@@ -9,10 +9,22 @@ namespace Lab4_webserver
 {
     public partial class Bai4 : Form
     {
+        private ProgressBar progressBar;
+        private bool isProgressBarRunning = false;
+
         public Bai4()
         {
             InitializeComponent();
             _dsphim = new Dictionary<string, int>(); // Initialize the dictionary here
+
+            foreach (Control control in panel1.Controls)
+            {
+                if (control is GroupBox groupBox)
+                {
+                    groupBox.Click += GroupBox_Click;
+                }
+            }
+
         }
 
         public class Phim
@@ -29,9 +41,13 @@ namespace Lab4_webserver
 
         private void Bai4_Load(object sender, EventArgs e)
         {
+           
+
             _PhimList = DeserializeFromFileJson<List<Phim>>(@"D:\HK2_2024\laptrinhmangcanban\Lab4-WEbserver\Lab4-webserver\Lab4-webserver\data.json");
             if (_PhimList != null && _PhimList.Count > 0)
             {
+                
+
                 foreach (var phim in _PhimList)
                 {
                     GroupBox groupBox = new GroupBox
@@ -40,7 +56,7 @@ namespace Lab4_webserver
                         Size = new Size(802, 181),
                         Text = ""
                     };
-                    groupBox.Click += GroupBox_Click; // Attach event handler
+                    groupBox.Click += GroupBox_Click; 
                     panel1.Controls.Add(groupBox);
                     ygroupbox += 187;
 
@@ -76,8 +92,12 @@ namespace Lab4_webserver
 
                     // Populate the dictionary with movie name and price
                     _dsphim[phim.TenPhim] = phim.Giave;
+
+                    
                 }
             }
+
+           
         }
 
         static T DeserializeFromFileJson<T>(string filePath)
@@ -96,6 +116,11 @@ namespace Lab4_webserver
 
         private void GroupBox_Click(object sender, EventArgs e)
         {
+            if (!isProgressBarRunning)
+            {
+                isProgressBarRunning = true;
+                StartProgressBar();
+            }
             GroupBox clickedGroupBox = (GroupBox)sender;
             string movieLink = "";
 
@@ -108,27 +133,51 @@ namespace Lab4_webserver
                 }
             }
 
-            if (!string.IsNullOrEmpty(movieLink)) // Check if a valid link is found
+            if (!string.IsNullOrEmpty(movieLink)) 
             {
                 ShowWeb showWeb = new ShowWeb
                 {
                     ReceivedMessage = movieLink
                 };
+                showWeb.FormClosed += ShowWeb_FormClosed;
                 showWeb.Show();
             }
             else
             {
-                MessageBox.Show("Không tìm thấy liên kết hợp lệ trong groupbox."); // Notify the user
+                MessageBox.Show("Không tìm thấy liên kết hợp lệ trong groupbox."); 
             }
         }
-
+        private void ShowWeb_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            isProgressBarRunning = false; 
+            progressBar1.Value = 0;
+        }
+        private void StartProgressBar()
+        {
+            Timer timer = new Timer();
+            timer.Interval = 100;
+            timer.Tick += (sender, e) =>
+            {
+                if (progressBar1.Value < 100) 
+                {
+                    progressBar1.Value += 10; 
+                }
+                else
+                {
+                    timer.Stop();
+                    isProgressBarRunning = false; 
+                }
+            };
+            timer.Start(); 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Datve datve = new Datve
             {
-                dsphim = _dsphim // Pass the dictionary to the Datve form
+                dsphim = _dsphim 
             };
             datve.Show();
+            
         }
     }
 }
